@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head .logo {
+  padding: 25px 0;
+  width: 100%;
+  -webkit-box-shadow: -1px -5px 10px black;
+          box-shadow: -1px -5px 10px black;
+  text-align: center;
+  z-index: 1;
+}
+
+.head .position {
+  text-align: center;
+  width: 100%;
+  background-color: #f3ebeb;
+  font-weight: 700;
+  color: #414141;
+  font-size: 17px;
+}
+
+.head .position .fa-solid {
+  margin-right: 25px;
+}
+
+.explore {
+  text-align: center;
+  background-color: #f4e9e963;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+}
+
+.explore h1 {
+  margin: 0;
+  width: 70%;
+}
+
+.explore p {
+  margin: 15px;
+  width: 78%;
+  font-size: 23px;
+  color: #414141;
+}
+
+.explore .explore-btn {
+  margin: 25px;
+}
+
+.explore .explore-btn button {
+  padding: 22px 28px;
+  border-radius: 100px;
+  font-size: 18px;
+  background-color: #9656DC;
+  border: none;
+  color: wheat;
+  -webkit-box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.57);
+          box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.57);
+  font-weight: 700;
+}
+
+.explore .explore-btn button:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  -webkit-box-shadow: 2px 1px 5px black;
+          box-shadow: 2px 1px 5px black;
+}
+
+.fonctionnement {
+  width: 100%;
+}
+
+.fonctionnement h2 {
+  margin-left: 20px;
+}
+
+.fonctionnement .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fonctionnement .card-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 90px;
+  background-color: #cbd3d136;
+  border-radius: 30px;
+  margin: 10px 0;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.229);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.229);
+}
+
+.fonctionnement .card-container .card p {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.fonctionnement .card-container .card .fa-solid {
+  margin-right: 70px;
+  font-size: 25px;
+  color: grey;
+}
+
+.fonctionnement .card-container .card .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  margin-right: 40px;
+  margin-left: -15px;
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  background-color: #9656DC;
+  color: wheat;
+}
+
+.fonctionnement .card-container .card .number p {
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */
