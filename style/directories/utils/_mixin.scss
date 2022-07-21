@@ -1,0 +1,19 @@
+// MAP 
+$breakpoints: (
+    tablette: 750px,
+    desktop: 1100px
+);
+
+//MIXIN
+
+@mixin tab-only {
+    @media screen and (min-width: map-get($breakpoints, tablette)) {
+        @content;
+    }
+}
+
+@mixin desk-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}

@@ -83,7 +83,8 @@ body {
   padding: 22px 28px;
   border-radius: 100px;
   font-size: 18px;
-  background-color: #9656DC;
+  background: #9656dc;
+  background: linear-gradient(355deg, #9656dc 0%, #ff79da 100%);
   border: none;
   color: wheat;
   -webkit-box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.57);
@@ -109,11 +110,26 @@ body {
   margin-left: 20px;
 }
 
+@media screen and (min-width: 750px) {
+  .fonctionnement h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .fonctionnement h2 {
+    text-align: left;
+    font-size: 35px;
+    margin: 70px 130px;
+  }
+}
+
 .fonctionnement .card-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  max-width: 700px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -124,6 +140,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1100px) {
+  .fonctionnement .card-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    max-width: none;
+  }
 }
 
 .fonctionnement .card-container .card {
@@ -142,15 +172,54 @@ body {
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.229);
 }
 
+@media screen and (min-width: 1100px) {
+  .fonctionnement .card-container .card {
+    position: relative;
+    width: 23%;
+    height: 180px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .fonctionnement .card-container .card:hover {
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    -webkit-filter: brightness(0.8);
+            filter: brightness(0.8);
+  }
+  .fonctionnement .card-container .card:hover .fa-solid {
+    color: #9656DC;
+  }
+}
+
 .fonctionnement .card-container .card p {
   font-weight: 700;
   font-size: 18px;
+}
+
+@media screen and (min-width: 1100px) {
+  .fonctionnement .card-container .card p {
+    text-align: center;
+    font-size: 23px;
+  }
 }
 
 .fonctionnement .card-container .card .fa-solid {
   margin-right: 70px;
   font-size: 25px;
   color: grey;
+}
+
+@media screen and (min-width: 1100px) {
+  .fonctionnement .card-container .card .fa-solid {
+    margin: 0;
+    font-size: 30px;
+  }
 }
 
 .fonctionnement .card-container .card .number {
@@ -173,7 +242,24 @@ body {
   color: wheat;
 }
 
-.fonctionnement .card-container .card .number p {
+@media screen and (min-width: 1100px) {
+  .fonctionnement .card-container .card .number {
+    position: absolute;
+    margin: 0;
+    top: -15px;
+    left: -15px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.fonctionnement .card-container .card .number span {
   font-size: 14px;
+}
+
+@media screen and (min-width: 1100px) {
+  .fonctionnement .card-container .card .number span {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
