@@ -364,4 +364,29 @@ body {
   transition: 0.8s ease-in;
   opacity: 1;
 }
+
+footer {
+  background-color: #313333;
+  color: white;
+  padding: 10px;
+}
+
+footer h4 {
+  font-size: 20px;
+  font-family: 'Shrikhand';
+  font-weight: 400;
+  margin: 20px;
+  margin-top: 10px;
+}
+
+footer p {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+footer p i {
+  margin-right: 10px;
+  font-size: 12px;
+}
 /*# sourceMappingURL=style.css.map */
