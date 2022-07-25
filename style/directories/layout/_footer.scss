@@ -2,6 +2,12 @@ footer {
     background-color: rgb(49, 51, 51);
     color: white;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    @include desk-only {
+        text-align: center;
+    }
 
     h4 {
         font-size: 20px;
@@ -9,12 +15,21 @@ footer {
         font-weight: 400;
         margin: 20px;
         margin-top: 10px;
-    }
 
-    p {
+        @include desk-only {
+            font-size: 30px;
+        }
+    }
+    
+    a {
+        color: white;
         margin: 0;
         margin-bottom: 10px;
         margin-left: 20px;
+        text-decoration: none;
+        @include desk-only {
+            font-size: 20px;
+        }
         i {
             margin-right: 10px;
             font-size: 12px;
