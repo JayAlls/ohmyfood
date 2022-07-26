@@ -17,3 +17,26 @@ $breakpoints: (
         @content;
     }
 }
+
+@mixin card-shadow {
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.056);
+}
+
+@mixin button {
+    padding: 22px 28px;
+    border-radius: 100px;
+    font-size: 18px;
+    background: rgb(150,86,220);
+    background: linear-gradient(355deg, rgba(150,86,220,1) 0%, rgba(255,121,218,1) 100%);
+    border: none;
+    color: wheat;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.57);
+    font-weight: 700;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(1.30);
+        transition: 0.6s ease;
+        box-shadow: 2px 1px 5px rgb(0, 0, 0);
+    }
+}
