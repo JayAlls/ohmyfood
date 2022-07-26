@@ -333,6 +333,7 @@ body {
 }
 
 .restaurant .card-container .card {
+  position: relative;
   width: 80%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -350,6 +351,19 @@ body {
     width: 40%;
     max-width: 600px;
   }
+}
+
+.restaurant .card-container .card .new {
+  position: absolute;
+  border: 1px solid #0e8f70;
+  background-color: #99e2d0;
+  color: #0e8f70;
+  right: 20px;
+  top: 20px;
+}
+
+.restaurant .card-container .card .new p {
+  margin: 8px 15px;
 }
 
 .restaurant .card-container .card .img {

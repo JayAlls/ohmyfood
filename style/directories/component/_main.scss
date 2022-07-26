@@ -154,6 +154,7 @@
             }
         }
         .card {
+            position: relative;
             width: 80%;
             object-fit: cover;
             height: 310px;
@@ -166,6 +167,18 @@
             @include tab-only {
                 width: 40%;
                 max-width: 600px;
+            }
+
+            .new {
+                position: absolute;
+                border: 1px solid #0e8f70;
+                background-color: #99e2d0;
+                color: #0e8f70;
+                right: 20px;
+                top: 20px;
+                p {
+                    margin: 8px 15px;
+                }
             }
 
             .img{
