@@ -9,3 +9,13 @@
         opacity: 1;
     }
 }
+
+@keyframes returnAnimation {
+    0% {
+        margin-right: 0;
+    }
+
+    100% {
+        margin-right: -7rem;
+    }
+}
