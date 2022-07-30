@@ -1,6 +1,7 @@
 // HEADER LOGO
 
 .head {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,6 +13,20 @@
         box-shadow: -1px -5px 10px black;
         text-align: center;
         z-index: 1;
+    }
+
+    a {
+        position: absolute;
+        top: 50%;
+        margin-top: -14px;
+        left: 30px;
+        font-size: 1.5rem;
+        color: black;
+        z-index: 100;
+        &:hover {
+            opacity: 0.7;
+            transition: 0.3s;
+        }
     }
 
 // HEADER POSITION
