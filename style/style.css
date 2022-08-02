@@ -734,7 +734,7 @@ footer a i {
 }
 
 .menu .menu-container .menu-item .menu-card .select .fas {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   color: white;
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
@@ -835,6 +835,103 @@ footer a i {
   }
   100% {
     margin-right: -7rem;
+  }
+}
+
+.loader {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ffffff;
+  opacity: 0.9;
+  z-index: 20;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-animation: disapear 500ms 3s forwards;
+          animation: disapear 500ms 3s forwards;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.loader::after {
+  content: "Loading...";
+  position: absolute;
+  height: 150px;
+  width: 250px;
+  font-size: 2rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-family: "Shrikhand", sans-serif;
+  -webkit-animation: translate 1.5s infinite ease-in-out alternate;
+          animation: translate 1.5s infinite ease-in-out alternate;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-right: 10px solid transparent;
+  border-top: 6px solid #9656DC;
+  border-radius: 100%;
+  -webkit-animation: spin 1.5s ease-in infinite;
+          animation: spin 1.5s ease-in infinite;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes disapear {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes disapear {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes translate {
+  from {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  to {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+
+@keyframes translate {
+  from {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  to {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
   }
 }
 /*# sourceMappingURL=style.css.map */
