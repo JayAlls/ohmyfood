@@ -26,6 +26,13 @@
         align-items: center;
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
+        flex-wrap: wrap;
+        @media screen and (max-width: 460px) {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+        }
         
         h1 {
             font-family: 'Shrikhand', sans-serif;
@@ -39,6 +46,13 @@
             margin-right: 50px;
             position: absolute;
             right: 0;
+
+            @media screen and (max-width: 460px) {
+                left: 50%;
+                margin-left: -15px;
+                bottom: 0;
+            }
+
         }
 
         .fas {
@@ -82,7 +96,7 @@
                 flex-wrap: wrap;
             }
             .menu-card {
-                @for $i from 2 through 4 {
+                @for $i from 2 through 5 {
                     &:nth-child(#{$i}) {
                         animation-delay: 150ms * $i;
                     }

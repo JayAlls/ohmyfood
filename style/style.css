@@ -103,7 +103,7 @@ body {
   background: #9656dc;
   background: linear-gradient(355deg, #9656dc 0%, #ff79da 100%);
   border: none;
-  color: wheat;
+  color: white;
   -webkit-box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.57);
           box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.57);
   font-weight: 700;
@@ -531,6 +531,23 @@ footer a i {
           align-items: center;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 460px) {
+  .menu .menu_title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .menu .menu_title h1 {
@@ -545,6 +562,14 @@ footer a i {
   margin-right: 50px;
   position: absolute;
   right: 0;
+}
+
+@media screen and (max-width: 460px) {
+  .menu .menu_title i {
+    left: 50%;
+    margin-left: -15px;
+    bottom: 0;
+  }
 }
 
 .menu .menu_title .fas {
@@ -651,6 +676,11 @@ footer a i {
 .menu .menu-container .menu-item .menu-card:nth-child(4) {
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
+}
+
+.menu .menu-container .menu-item .menu-card:nth-child(5) {
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
 }
 
 @media screen and (min-width: 1100px) {
@@ -777,7 +807,7 @@ footer a i {
   background: #9656dc;
   background: linear-gradient(355deg, #9656dc 0%, #ff79da 100%);
   border: none;
-  color: wheat;
+  color: white;
   -webkit-box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.57);
           box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.57);
   font-weight: 700;
