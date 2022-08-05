@@ -601,9 +601,6 @@ footer a i {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: top;
-        -ms-flex-align: top;
-            align-items: top;
     padding-bottom: 100px;
   }
 }
