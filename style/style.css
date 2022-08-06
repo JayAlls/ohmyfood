@@ -57,6 +57,10 @@ body {
   font-size: 17px;
 }
 
+.head .position p {
+  margin-right: 45px;
+}
+
 .head .position .fa-solid {
   margin-right: 25px;
 }
