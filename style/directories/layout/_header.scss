@@ -28,51 +28,5 @@
             transition: 0.3s;
         }
     }
-
-// HEADER POSITION
-
-    .position {
-        text-align: center;
-        width: 100%;
-        background-color: $backpos;
-        font-weight: 700;
-        color: rgb(65, 65, 65);
-        font-size: 17px;
-        p {
-            margin-right: 45px;
-        }
-            
-        .fa-solid {
-            margin-right: 25px;
-        }
-    }
 }
 
-// HEADER EXPLORE
-
-.explore {
-    text-align: center;
-    background-color: $backexp;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0;
-    h1 {
-        margin: 0;
-        width: 70%;
-    }
-    p {
-        margin: 15px;
-        width: 78%;
-        font-size: 23px;
-        color: rgb(65, 65, 65);
-    }
-
-    .explore-btn {
-        margin: 25px;
-        button {
-            @include button;
-        }
-    }
-}
